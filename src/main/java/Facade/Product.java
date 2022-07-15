@@ -9,5 +9,10 @@ package Facade;
  * @author CAELOS JR 2018
  */
 public class Product {
+    private String nombre;
+
+    public Product(String nombre) {
+        this.nombre = nombre;
+    }
     
 }

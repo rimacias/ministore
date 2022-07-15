@@ -15,14 +15,8 @@ import Facade.Product;
  * @author CAELOS JR 2018
  */
 public class ComprasSistema {
-    private Compras CompraAct;
 
-    public Compras getCompraAct() {
-        return CompraAct;
-    }
-
-    public void setCompraAct(Compras CompraAct) {
-        this.CompraAct = CompraAct;
+    public ComprasSistema(Compras CompraAct) {
     }
     
     private Compras generateCompra(Clients Client,Product comprado){

@@ -13,15 +13,6 @@ import Facade.Facturas;
  * @author CAELOS JR 2018
  */
 public class Facturador {
-    private Facturas FacturaAct;
-
-    public Facturas getFacturaAct() {
-        return FacturaAct;
-    }
-
-    public void setFacturaAct(Facturas FacturaAct) {
-        this.FacturaAct = FacturaAct;
-    }
     
     public Facturas GenerateFactura (Compras compra){
         // se genera la factura en base a la compra

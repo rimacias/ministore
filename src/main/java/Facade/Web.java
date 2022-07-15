@@ -33,7 +33,15 @@ public class Web {
         this.cliente = cliente;
     }
     
-    public void buy(Product producto){
-    //se compra
+   public void buy(){
+        //se pide un producto al usuario
+        Product producto = new Product("papa");
+        ShopFacade comprador = new ShopFacade();
+        comprador.ProcessPurchase(producto, this.cliente);
+    }
+        
+    public void Consult(){
+        ShopFacade comprador = new ShopFacade();
+        comprador.ConsultFactures(cliente);
     }
 }

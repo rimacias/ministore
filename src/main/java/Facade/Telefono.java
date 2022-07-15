@@ -9,5 +9,11 @@ package Facade;
  * @author CAELOS JR 2018
  */
 public class Telefono {
+    private Integer Numero;
+    private Clients cliente;
     
+    public void Consult(){
+        ShopFacade comprador = new ShopFacade();
+        comprador.ConsultFactures(cliente);
+    }
 }
