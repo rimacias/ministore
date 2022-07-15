@@ -10,7 +10,7 @@ import Facade.SubsistemaLegacy.ComprasSistema;
  *
  * @author CAELOS JR 2018
  */
-public class ShopFacade {
+public class ShopFacade implements IFacade {
 
     public ShopFacade() {
     }
