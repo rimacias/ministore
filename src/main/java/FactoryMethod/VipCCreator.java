@@ -1,9 +1,6 @@
 package FactoryMethod;
-
 import java.time.LocalDate;
-
 public class VipCCreator extends CCreator {
-
     @Override
     public CreditCard buildCard(Cliente c) {
         VipCC cc = new VipCC();

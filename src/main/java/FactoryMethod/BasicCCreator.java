@@ -1,10 +1,6 @@
 package FactoryMethod;
-
 import java.time.LocalDate;
-
-
 public class BasicCCreator extends CCreator{
-
     @Override
     public CreditCard buildCard(Cliente c) {
         BasicCC cc = new BasicCC();
@@ -20,6 +16,4 @@ public class BasicCCreator extends CCreator{
         cc.setYearlyPayment(80);
         return cc;
     }
-
-    
 }

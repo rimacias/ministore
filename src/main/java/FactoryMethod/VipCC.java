@@ -1,9 +1,6 @@
 package FactoryMethod;
-
 import java.time.LocalDate;
-
 public class VipCC implements CreditCard {
-
     private String cardNumber;
     private String cardHolderName;
     private LocalDate cardExpiryDate;
@@ -85,40 +82,22 @@ public class VipCC implements CreditCard {
     public void setYearlyPayment(double yearlyPayment) {
         this.yearlyPayment = yearlyPayment;
     }
-
+    
     @Override
     public boolean makePayment(double amount) {
-        if (cardBalance > amount / 6) {
-            return payIn3months(amount);
+        if (cardBalance > amount) {
+            debit(amount);
+            return true;
         } else {
             return false;
         }
     }
-
     @Override
     public void credit(double amount) {
         cardBalance += amount;
     }
-
     @Override
     public void debit(double amount) {
         cardBalance -= amount;
     }
-
-    public boolean payIn3months(double amount) {
-        // request payments in 3 months
-        // if payment is successful, update balance every month
-        // return true;
-        // if payment is unsuccessful, deny the request
-        // return false;
-        // month 1:
-        // All of this requests are sended every month.
-        debit(amount / 3);
-        // month 2:
-        debit(amount / 3);
-        // month 3:
-        debit(amount / 3);
-        return true;
-    }
-
 }

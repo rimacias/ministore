@@ -1,12 +1,9 @@
 package FactoryMethod;
-
 import java.time.LocalDate;
-
 public class PremiumCCreator extends CCreator{
-
     @Override
     public CreditCard buildCard(Cliente c) {
-        BasicCC cc = new BasicCC();
+        PremiumCC cc = new PremiumCC();
         LocalDate today = LocalDate.now();
         cc.setCardNumber(super.genCardNumber());
         cc.setCardHolderName(c.getName() + c.getLastName());
