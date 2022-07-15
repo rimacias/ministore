@@ -13,6 +13,9 @@ import Facade.Facturas;
  * @author CAELOS JR 2018
  */
 public class Facturador {
+
+    public Facturador() {
+    }
     
     public Facturas GenerateFactura (Compras compra){
         // se genera la factura en base a la compra

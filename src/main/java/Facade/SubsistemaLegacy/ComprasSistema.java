@@ -6,6 +6,7 @@ package Facade.SubsistemaLegacy;
 
 import Facade.Clients;
 import Facade.Compras;
+import Facade.Facturas;
 import Facade.Product;
 
 
@@ -16,11 +17,12 @@ import Facade.Product;
  */
 public class ComprasSistema {
 
-    public ComprasSistema(Compras CompraAct) {
+    public ComprasSistema() {
     }
     
-    private Compras generateCompra(Clients Client,Product comprado){
-        // se genera una compra y se la devuelve
+
+    public Compras generateCompra (Clients Client,Product comprado){
+        // se genera la factura en base a la compra
         Compras compras = new Compras(comprado);
         return compras;
     }    
