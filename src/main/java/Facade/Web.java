@@ -29,4 +29,8 @@ public class Web {
     public void Consult(){
         ShopFacade comprador = new ShopFacade();
         comprador.ConsultFactures(cliente);
+<<<<<<< HEAD
 }}
+=======
+}
+>>>>>>> parent of c67b26f (Package Decorator)
