@@ -1,6 +1,6 @@
-package Decorator;
+    package Decorator;
 
-public class SmsDeco extends BaseDecorator {
+public class SmsDeco extends BaseDecorator{
     public SmsDeco(Notifier noti){
         super(noti);
     }

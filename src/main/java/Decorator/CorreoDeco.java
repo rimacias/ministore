@@ -1,4 +1,5 @@
-package Decorator;
+    package Decorator;
+
 public class CorreoDeco extends BaseDecorator{
     public CorreoDeco(Notifier noti){
         super(noti);
